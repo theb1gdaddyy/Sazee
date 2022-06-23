@@ -1,0 +1,573 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --DarkViolet: #004F59;
+  --GrayishBlue: #497c82;
+
+  --VeryDarkViolet: #022c32;
+  --DarkGrayishViolet: #3a6a70;
+  --VeryLightGray: hsl(0, 0%, 90%);
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* ---------------------------------
+------------------------------------
+---Beginning of registration CSS --
+-------------------------------------
+-------------------------------------*/
+@import url("https://fonts.google.com/specimen/Karla");
+
+body {
+  font-family: "Karla", sans-serif;
+}
+/* **************************** */
+/*             Nav              */
+/* **************************** */
+
+.view-plan-button {
+  padding: 1rem 2rem;
+  background: none;
+  color: #004F59;
+  border: 1px solid #004F59;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.5s, color 0.5s;
+  font-weight: 800;
+}
+.view-plan-button:hover,
+.view-plan-button:focus {
+  background: #004F59;
+  color: #fff;
+}
+.nav-links {
+  display: none;
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.nav-list {
+  justify-content: center;
+  text-align: center;
+}
+.nav-list li {
+  margin: 1rem 0;
+}
+.nav-list li:nth-last-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+.nav-links-shown {
+  display: flex;
+}
+.nav-hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+
+  justify-content: flex-start;
+}
+.nav-logo {
+  align-self: center;
+}
+
+.nav-list a:not(.view-plan-button) {
+  text-decoration: none;
+  color: #004F59;
+}
+.nav-list a:not(.view-plan-button):hover,
+.nav-list a:not(.view-plan-button):focus {
+  color: #004F59;
+}
+.nav-list li {
+  list-style-type: none;
+}
+
+/* **************************** */
+/*             Hero             */
+/* **************************** */
+
+.hero {
+  background-color: #004F59;
+  color: #fff;
+  position: relative;
+}
+
+.left-svg {
+  background: url("../images/bg-pattern-intro-left-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  bottom: 7;
+  z-index: 1;
+}
+.right-svg {
+  background: url("../images/bg-pattern-intro-right-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 11rem;
+  height: 40rem;
+  position: absolute;
+  bottom: -30rem;
+  right: 0;
+  z-index: 1;
+}
+.hero-text h1, p{
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  z-index: 3;
+  /* position: relative; */
+  background-color: #004F59;
+}
+.hero-text h1{
+  padding-top: 10px;
+}
+.hero-text p{
+  padding-bottom: 10px;
+}
+.hero-button,
+.banner__button {
+  color: #004F59;
+  border: 1px solid #fff;
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.banner__button:hover,
+.banner__button:focus {
+  background: #fff;
+  color: #004F59;
+}
+
+
+.reg-title {
+  font-family: "DM Serif Display", serif;
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  z-index: 3;
+  padding-bottom: 2rem;
+}
+.reg-description {
+    margin-top: 0%;
+}
+.main_content {
+  text-align: center;
+  padding: 0 2rem;
+  padding-top: 6em;
+  margin-top: 3rem;
+}
+
+
+.main_content h2,
+.main_content h3 {
+  font-family: "DM Serif Display", serif;
+  color: var(--VeryDarkViolet);
+}
+.main_content button,
+.banner__button {
+  color: #004F59;
+  border: 1px solid #fff;
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.banner__button:hover,
+.banner__button:focus {
+  background: #004F59;
+  color: #ffff;
+}
+
+form {
+    width: 60vw;
+      max-width: 500px;
+      min-width: 300px;
+      margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  fieldset {
+    border: none;
+      padding: 2rem 0;
+  }
+  
+  fieldset:not(:last-of-type) {
+    border-bottom: 3px solid #004F59;
+  }
+  
+  label {
+    display: block;
+      margin: 0.5rem 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+      width: 100%;
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: #42808B;
+    border: 1px solid #42808B;
+    color: #FFE9D1;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #42808B;
+    border-color: #FFE9D1;
+    min-width: 300px;
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  
+  a {
+    color: #FFE9D1;
+  }
+  
+   /* .button {  -------
+      width: 30px;
+      max-width: 50px;
+      min-width: 300px;
+      margin: 0 auto;
+    padding-bottom: 2em;
+    background-color: #ffffff;
+  } */
+/* ---------------------------------
+------------------------------------
+---End of registration CSS --
+-------------------------------------
+-------------------------------------*/
+@media (min-width: 767px) {
+  .header {
+    padding: 1rem 5rem;
+
+    max-width: 80rem;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-hamburger {
+    display: none;
+  }
+
+  .nav-logo {
+    align-self: center;
+  }
+  .nav-links {
+    display: inline-block;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 0;
+  }
+  .nav-list li:nth-last-of-type(2) {
+    margin: 0rem;
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    max-height: 40rem;
+  }
+
+  .hero-text {
+    order: -1;
+    padding-left: 0;
+    max-width: 32rem;
+    justify-self: flex-start;
+    text-align: left;
+  }
+  .reg-title::before {
+    content: " ";
+    display: block;
+    width: 7rem;
+    height: 3rem;
+    border-top: 1px solid #fff;
+  }
+  .hero-title {
+    margin-top: 0;
+  }
+
+  .left-svg {
+    background: url("images/bg-pattern-intro-left-desktop.svg");
+    background-size: contain;
+    width: 20rem;
+
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -20rem;
+    left: 0;
+    z-index: 1;
+  }
+  .right-svg {
+    background: url("images/bg-pattern-intro-right-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 21rem;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
+}
+
+
+
+
+
+/* .header{ 
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.header ul h1{
+  display: inline;
+  margin-left: -30px;
+  margin-right: 15px;
+  font-weight: bolder;
+}
+
+
+.header ul{
+float: left;
+margin: 15px;
+}
+
+.header ul li{
+  display: inline-block;
+  align-items: center;
+ margin: 20px;
+}
+
+.header ul li a{
+  color: #FFE9D1;
+  text-decoration: none;
+
+}
+
+.right-header ul{
+  float: right;
+}
+
+.right-header ul li Button {
+  border-radius: 8px;
+  height: 30px;
+  width: 80px;
+}
+
+.content{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+  padding-left: 20px;
+  padding-right: -20px;
+  align-content: center;
+  justify-content: center;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #004F59;
+    color: #FFE9D1;
+    font-family: Tahoma;
+    font-size: 16px;
+      
+  }
+  
+  h1 {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 50px;
+    color: #92705B;
+    text-shadow: 2px 2px black;
+    margin: 1em auto;
+    text-align: center;
+}
+  
+  
+  p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  form {
+    width: 60vw;
+      max-width: 500px;
+      min-width: 300px;
+      margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  
+  fieldset {
+    border: none;
+      padding: 2rem 0;
+  }
+  
+  fieldset:not(:last-of-type) {
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+  label {
+    display: block;
+      margin: 0.5rem 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+      width: 100%;
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: #42808B;
+    border: 1px solid #42808B;
+    color: #FFE9D1;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #42808B;
+    border-color: #FFE9D1;
+    min-width: 300px;
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  
+  a {
+    color: #FFE9D1;
+  }
+  
+  .button {
+    width: 30px;
+      max-width: 50px;
+      min-width: 300px;
+      margin: 0 auto;
+    padding-bottom: 2em;
+    background-color: #ffffff;
+  }*/

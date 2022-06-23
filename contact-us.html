@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+	  <link rel="stylesheet" type="text/css" href="registration.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-mobile">
+        <img class="nav-logo" src="images/logo.jpg.jpg" alt="" height="80px" width="200px"/>
+        <button class="nav-hamburger">
+          <img
+            src="images/icon-hamburger.svg"
+            alt="Mobile Nav Dropdown"
+            id="hamburger-menu"
+          />
+          <img
+            src="./images/icon-close.svg"
+            alt="Mobile Close Menu"
+            id="closed-menu"
+            class="closed-menu"
+          />
+        </button>
+      </div>
+      <nav class="nav-links">
+        <ul class="nav-list">
+          <li><a href="sample.html">Home</a></li>
+          <li><a href="our-products.html">Our Products</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+         <li><a href="registration.html">Register</a></li>
+          <li>
+            <a class="view-plan-button" href="login.html">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="left-svg"></div>
+      <div class="right-svg"></div>
+      <div class="hero-text">
+        <h1 class="reg-title">Contact Us</h1>
+    <p class="reg-description">Please fill out this form with your message to us</p>
+  </div>
+</section>
+<section class="main_conntent">
+    <form>
+      <fieldset>
+        <label>Name: <input type="text" name="first-name" required /></label>
+        <label>Email: <input type="email" name="email" required /></label>
+        <label>Message:
+          <textarea name="bio" rows="30" cols="30" placeholder="Tell me something..."></textarea>
+			  </label>
+      </fieldset>
+      <button class="view-plan-button hero-button" href="#">Send</button>
+    </form>
+    </div>
+  </body>
+</html>
