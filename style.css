@@ -591,8 +591,15 @@ body {
     background-repeat: no-repeat;
     width: 100%;
   }
+  .footer__bottom {
+    color: #004F59;
+  }
 }
 
 .closed-menu {
   display: none;
+}
+.form {
+  background-color: #004F59;
+  width: 100%;
 }
